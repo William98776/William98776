@@ -1,161 +1,221 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Facebook Login</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #e9ebee;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+            margin: 0;
+
+        }
+
+        
+
+        .login-container {
+
+            background-color: #fff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            padding: 40px;
+
+            width: 300px;
+
+            text-align: center;
+
+        }
+
+
+        .login-container h1 {
+
+            font-size: 24px;
+
+            color: #1877f2;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .input-group {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        input[type="text"], input[type="password"] {
+
+            width: 100%;
+
+            padding: 10px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            font-size: 16px;
+
+        }
+
+
+        input[type="submit"] {
+
+            width: 100%;
+
+            padding: 10px;
+
+            background-color: #1877f2;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+        }
+
+
+        input[type="submit"]:hover {
+
+            background-color: #165e9c;
+
+        }
+
+
+        .forgot-password {
+
+            margin-top: 15px;
+
+        }
+
+
+        .forgot-password a {
+
+            font-size: 14px;
+
+            color: #1877f2;
+
+            text-decoration: none;
+
+        }
+
+
+        .forgot-password a:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+        .or-divider {
+
+            margin: 20px 0;
+
+            font-size: 14px;
+
+            color: #65676b;
+
+        }
+
+
+        .register-button {
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            background-color: #42b72a;
+
+            color: white;
+
+            font-size: 16px;
+
+            width: 100%;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+
+        .register-button:hover {
+
+            background-color: #36a420;
+
+        }
+
+    </style>
+
+</head>
+
 <body>
-    <div class="row res">
-        <div class="fb-form res">
-            <div class="card">
-                <h1>facebook</h1>
-                <p>Connect with friends and the world </p>
-                <p> around you on Facebook.</p>
-            </div>
-            <form action="#">
-                <input type="email" placeholder="Email or phone number"
-                    required>
-                <input type="password" placeholder="Password" required>
-                <div class="fb-submit">
-                    <button type="submit" class="login">Login</button>
-                    <a href="#" class="forgot">Forgot password?</a>
-                </div>
-                <hr>
-                <div class="button">
-                    <a href="#">Create new account</a>
-                </div>
-            </form>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-langs">
-            <ol>
-                <li>English (UK)</li>
-                <li><a href="#">मराठी</a></li>
-                <li><a href="#">हिन्दी</a></li>
-                <li><a href="#">اردو</a></li>
-                <li><a href="#">ગુજરાતી</a></li>
-                <li><a href="#">ಕನ್ನಡ</a></li>
-                <li><a href="#">ਪੰਜਾਬੀ</a></li>
-                <li><a href="#">தமிழ்</a></li>
-                <li><a href="#">বাংলা</a></li>
-                <li><a href="#">తెలుగు</a></li>
-                <li><a href="#">മലയാളം</a></li>
-                <li><button>+</button></li>
-            </ol>
-            <ol>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In </a></li>
-                <li><a href="#">Messenger</a></li>
-                <li><a href="#">Facebook Lite</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Marketplace</a></li>
-                <li><a href="#">Meta Pay</a></li>
-                <li><a href="#">Meta Store</a></li>
-                <li><a href="#">Meta Quest</a></li>
-                <li><a href="#">Imagine with Meta AI</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Threads</a></li>
-                <li><a href="#">Fundraisers</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Voting Information Centre</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Privacy Centre</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Create ad</a></li>
-                <li><a href="#">Create Page</a></li>
-                <li><a href="#">Developers</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">AdChoices</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Contact uploading and non-users</a></li>
-            </ol>
-            <small>Meta © 2024</small>
-        </div>
-    </footer>
+
+
+    <div class="login-container">
+
+        <h1>Facebook</h1>
+
+        <form action="#">
+
+            <div class="input-group">
+
+                <input type="text" placeholder="Email or phone" required>
+
+            </div>
+
+            <div class="input-group">
+
+                <input type="password" placeholder="Password" required>
+
+            </div>
+
+            <input type="submit" value="Log In">
+
+        </form>
+
+        <div class="forgot-password">
+
+            <a href="#">Forgotten password?</a>
+
+        </div>
+
+        <div class="or-divider">or</div>
+
+        <button class="register-button">Create New Account</button>
+
+    </div>
+
+
 </body>
 
 </html>
-<!DOCTYPE html>
-<html lang="en">
 
-<body>
-    <div class="row res">
-        <div class="fb-form res">
-            <div class="card">
-                <h1>facebook</h1>
-                <p>Connect with friends and the world </p>
-                <p> around you on Facebook.</p>
-            </div>
-            <form action="#">
-                <input type="email" placeholder="Email or phone number"
-                    required>
-                <input type="password" placeholder="Password" required>
-                <div class="fb-submit">
-                    <button type="submit" class="login">Login</button>
-                    <a href="#" class="forgot">Forgot password?</a>
-                </div>
-                <hr>
-                <div class="button">
-                    <a href="#">Create new account</a>
-                </div>
-            </form>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-langs">
-            <ol>
-                <li>English (UK)</li>
-                <li><a href="#">मराठी</a></li>
-                <li><a href="#">हिन्दी</a></li>
-                <li><a href="#">اردو</a></li>
-                <li><a href="#">ગુજરાતી</a></li>
-                <li><a href="#">ಕನ್ನಡ</a></li>
-                <li><a href="#">ਪੰਜਾਬੀ</a></li>
-                <li><a href="#">தமிழ்</a></li>
-                <li><a href="#">বাংলা</a></li>
-                <li><a href="#">తెలుగు</a></li>
-                <li><a href="#">മലയാളം</a></li>
-                <li><button>+</button></li>
-            </ol>
-            <ol>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In </a></li>
-                <li><a href="#">Messenger</a></li>
-                <li><a href="#">Facebook Lite</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Marketplace</a></li>
-                <li><a href="#">Meta Pay</a></li>
-                <li><a href="#">Meta Store</a></li>
-                <li><a href="#">Meta Quest</a></li>
-                <li><a href="#">Imagine with Meta AI</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Threads</a></li>
-                <li><a href="#">Fundraisers</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Voting Information Centre</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Privacy Centre</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Create ad</a></li>
-                <li><a href="#">Create Page</a></li>
-                <li><a href="#">Developers</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">AdChoices</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Contact uploading and non-users</a></li>
-            </ol>
-            <small>Meta © 2025</small>
-        </div>
-    </footer>
-</body>
-
-</html>
-.
